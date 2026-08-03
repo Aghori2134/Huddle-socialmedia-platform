@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Huddle-Login-signup</title>
+		<link rel="stylesheet" href="login.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css" integrity="sha512-kJlvECunwXftkPwyvHbclArO8wszgBGisiLeuDFwNM8ws+wKIw0sv1os3ClWZOcrEB2eRXULYUsm8OVRGJKwGA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	</head>
+	<body>
+		<nav class="nav1">
+			<button class="menu" popovertarget="abc"><i class="ri-menu-fill"></i></button>
+			<section class="dropdown" popover id="abc">
+				<div class="containts">
+					<a href="#" style="text-decoration:none; color:black;"><a href="travel.html" style="text-decoration:none; color:black;"><p><i class="ri-home-9-fill" style="color:brown"></i> Home</p></a></a>
+				</div>
+				<div class="containts2">
+					<a href="#" style="text-decoration:none; color:black;"><p><i class="ri-user-smile-line" style="color:yellow;" ></i> Profile</p></a>
+				</div>
+				<div class="containts3">
+					<a href="#" style="text-decoration:none; color:black;"><p><i class="ri-settings-2-line" style="color:blue;"></i> Settings</p></a>
+				</div>
+				<div class="containts4">
+					<a href="#" style="text-decoration:none; color:black;" ><p><i class="ri-donut-chart-fill" style="color:purple;"></i> stories</p></a>
+				</div>
+				<div class="containts5">
+					<a href="verifecation.html" style="text-decoration:none; color:black;"><p><i class="ri-verified-badge-fill" style="color:pink;"></i> Verification</p></a>
+				</div>
+			</section>
+			<a href="travel.html"><div class="logo"></div></a>		
+			<div class="book">
+				<a href="login-sign.html" style="text-decoration:none; color:white;"><b>Login/Signup</b></a>
+			</div>
+		</nav>
+
+		<div class="auth-container">
+			<div class="auth-box">
+				<input type="radio" id="tab-login" name="auth-tabs" checked>
+				<input type="radio" id="tab-signup" name="auth-tabs">
+
+				<div class="auth-tabs">
+					<label for="tab-login" class="tab-btn" id="login-label">Login</label>
+					<label for="tab-signup" class="tab-btn" id="signup-label">Sign Up</label>
+				</div>
+
+				<form id="loginForm" class="auth-form">
+					<h2 style="color:white">Welcome Back!</h2>
+					<p class="subtitle">Log in to manage your tours and travels</p>
+					
+					<div class="input-group">
+						<i class="ri-mail-fill"></i>
+						<input type="email" placeholder="Email Address" required>
+					</div>
+
+					<div class="input-group">
+						<i class="ri-lock-password-fill"></i>
+						<input type="password" placeholder="Password" required>
+					</div>
+
+					<button type="submit" class="submit-btn">Login</button>
+				</form>
+
+				<form id="signupForm" class="auth-form">
+					<h2 style="color:white">Create Account</h2>
+					<p class="subtitle">Fill your Details</p>
+
+					<div class="input-group">
+						<i class="ri-user-fill"></i>
+						<input type="text" placeholder="Full Name" required>
+					</div>
+					
+					<div class="input-group">
+						<i class="ri-mail-fill"></i>
+						<input type="email" placeholder="Email Address" required>
+					</div>
+
+					<div class="input-group">
+						<i class="ri-lock-password-fill"></i>
+						<input type="password" placeholder="Password" required>
+					</div>
+
+					<button type="submit" class="submit-btn">Sign Up</button>
+				</form>
+			</div>
+		</div>
+			<nav class="nav2">
+				<a href="travel.html" style="margin-left:3%; text-decoration:none;"><i class="ri-home-9-fill" style="color:white; font-size:40px;"></i></a>
+				<a href="#" style="text-decoration:none;"><i class="ri-user-smile-line" style="color:white; font-size:30px; font-size:40px;"></i></a>
+				<a href="#" style="text-decoration:none;"><i class="ri-settings-2-line" style="color:white; font-size:30px; font-size:40px;"></i></a>
+				<a href="#" style="text-decoration:none;"><i class="ri-donut-chart-fill" style="color:white; font-size:30px; font-size:40px;"></i></a>
+				<a href="#" style="text-decoration:none;"><i class="ri-verified-badge-fill" style="color:white; font-size:30px; font-size:40px;"></i></a>
+			</nav>
+	</body>
+</html>

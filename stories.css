@@ -1,0 +1,194 @@
+.stories-page-container {
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0 90px 0;
+    gap: 20px;
+}
+.stories-slider-bar {
+    width: 100%;
+    background-color: #161616;
+    border: 1px solid #262626;
+    border-radius: 16px;
+    padding: 12px 15px;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.stories-slider-bar::-webkit-scrollbar {
+    height: 4px;
+}
+
+.stories-slider-bar::-webkit-scrollbar-thumb {
+    background: #38BDF8;
+    border-radius: 4px;
+}
+
+.story-circle-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    min-width: 60px;
+}
+
+.story-ring {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #38BDF8;
+    background: linear-gradient(135deg, #38BDF8, #0284C7);
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.story-circle-item:hover .story-ring {
+    transform: scale(1.05);
+}
+
+.story-ring img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #161616;
+}
+
+.story-circle-item span {
+    margin-top: 5px;
+    font-size: 11px;
+    color: #cbd5e1;
+    text-align: center;
+    width: 65px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.story-viewer-carousel {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+
+.story-viewer-carousel::-webkit-scrollbar {
+    display: none;
+}
+.story-viewer-card {
+    min-width: 100%;
+    height: 520px;
+    background-color: #161616;
+    border: 1px solid #262626;
+    border-radius: 16px;
+    overflow: hidden;
+    position: relative;
+    scroll-snap-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.6);
+    flex-shrink: 0;
+}
+
+.story-header {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    
+    z-index: 5;
+}
+
+.story-user-img {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.story-username {
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    flex-grow: 1;
+}
+
+.close-story {
+    color: white;
+    font-size: 22px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.story-content-media {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.media-1 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx391uZr3h5iBvzsOnDyN5myVVX7IbyEu8aIOfAbzdRg&s=10'); }
+.media-2 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1yS_zWU7ARXXFCbMF16JBOQMvtOUI2AOokS8rkRdSnA&s=10'); }
+.media-3 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ47ZsBGL_7k7lsgisz-eWaJzPZgEGY7mJcatZyxhbA6A&s=10'); }
+.media-4 { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx391uZr3h5iBvzsOnDyN5myVVX7IbyEu8aIOfAbzdRg&s=10'); }
+
+.story-footer-reply {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    gap: 10px;
+    z-index: 5;
+}
+
+.story-reply-input {
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: white;
+    font-size: 13px;
+    outline: none;
+}
+
+.story-reply-input::placeholder {
+    color: #aaa;
+}
+
+.story-send-btn {
+    background: #38BDF8;
+    border: none;
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.story-send-btn:hover {
+    transform: scale(1.05);
+}

@@ -46,7 +46,9 @@ body {
 	background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeKY8FNzaROsFuOLzcWKDJfNyYbXJwkmSF0hKQKYiJCg&s=10');
 	background-repeat: no-repeat;
 	background-size: cover;
-	border-radius: 50%;
+	border-radius:50%;
+	align-items:center;
+	justify-content:center;
 }
 
 .book {
@@ -95,7 +97,6 @@ body {
 	font-size: 14px;
 }
 
-/* Main Feed Layout */
 .box {
 	width: 95%;
 	max-width: 1100px;
@@ -342,8 +343,6 @@ body {
 .nav2 {
 	display: none;
 }
-
-/* Responsive Media Queries */
 @media (max-width: 858px) {
 	.right-section {
 		display: none;

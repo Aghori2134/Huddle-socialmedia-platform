@@ -100,8 +100,6 @@
     background-repeat: no-repeat;
     animation: storySequence 24s infinite; /* 4 stories * 6 seconds each = 24s loop */
 }
-
-/* Stagger animation timing for each card */
 .story-viewer-card:nth-child(1) { animation-delay: 0s; }
 .story-viewer-card:nth-child(2) { animation-delay: 6s; }
 .story-viewer-card:nth-child(3) { animation-delay: 12s; }

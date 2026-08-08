@@ -192,3 +192,22 @@
 .story-send-btn:hover {
     transform: scale(1.05);
 }
+.ani{
+	height:5px;
+	width:1%;
+	background-color:white;
+	animation-name:wave;
+	animation-duration:6s;
+	animation-timing-function:linear;
+	animation-iteration-count :infinite;
+	border-radius:30px;
+}
+@keyframes wave {
+	from{
+		width:0%;
+	}
+	to{
+		width:100%;
+	}
+	
+}
